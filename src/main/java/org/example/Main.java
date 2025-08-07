@@ -28,5 +28,10 @@ public class Main {
         StringBuilder sb4 = new StringBuilder("I like programming in Python.");
         sb4.replace(22, 28, "Java");
         System.out.println(sb4);
+
+        // Exercise 5 - Method Chaining
+        StringBuilder sb5 = new StringBuilder("Start");
+        sb5.append("...").insert(0, "Ready, Set, ").delete(14, 17);
+        System.out.println(sb5);
     }
 }
