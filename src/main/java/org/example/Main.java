@@ -23,5 +23,10 @@ public class Main {
         // Deletes the character at index 4 (the ' ')
         sb3.deleteCharAt(4);
         System.out.println("After deleteAtChar(4): " + sb3);
+
+        // Exercise 4 - Replacing a Section
+        StringBuilder sb4 = new StringBuilder("I like programming in Python.");
+        sb4.replace(22, 28, "Java");
+        System.out.println(sb4);
     }
 }
