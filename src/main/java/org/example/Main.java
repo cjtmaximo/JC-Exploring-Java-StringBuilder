@@ -13,5 +13,15 @@ public class Main {
         StringBuilder sb2 = new StringBuilder("Java is great!");
         sb2.insert(8, "really ");
         System.out.println(sb2);
+
+        // Exercise 3 - Deleting Content
+        StringBuilder sb3 = new StringBuilder("This is a test sentence.");
+        // Deletes " a test"
+        sb3.delete(8, 15);
+        System.out.println("After delete(8, 15): " + sb3);
+
+        // Deletes the character at index 4 (the ' ')
+        sb3.deleteCharAt(4);
+        System.out.println("After deleteAtChar(4): " + sb3);
     }
 }
