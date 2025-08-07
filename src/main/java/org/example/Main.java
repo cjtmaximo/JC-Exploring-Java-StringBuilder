@@ -33,5 +33,20 @@ public class Main {
         StringBuilder sb5 = new StringBuilder("Start");
         sb5.append("...").insert(0, "Ready, Set, ").delete(14, 17);
         System.out.println(sb5);
+
+        // Exercise 6 - subString(), indexOf(), and Non-Existing Words
+        StringBuilder sb6 = new StringBuilder("The quick brown fox jumps over the lazy dog");
+
+        // Substring returns a String, it does not modify the StringBuilder
+        String sub = sb6.substring(16,19);
+        System.out.println("Substring: " + sub);
+
+        // indexOf works just like in String
+        int indexOfFox = sb6.indexOf("fox");
+        System.out.println("Index of 'fox': " + indexOfFox);
+
+        // Searching for a word that doesn't exist
+        int indexOfCat = sb6.indexOf("cat");
+        System.out.println("Index of 'cat': " + indexOfCat);
     }
 }
