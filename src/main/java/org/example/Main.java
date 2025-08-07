@@ -48,5 +48,16 @@ public class Main {
         // Searching for a word that doesn't exist
         int indexOfCat = sb6.indexOf("cat");
         System.out.println("Index of 'cat': " + indexOfCat);
+
+        // Exercise 7 - Converting back to a String
+        StringBuilder sb7 = new StringBuilder("Status: ");
+        sb7.append("Pending");
+
+        String finalStatus = sb7.toString();
+
+        sb7.append(" - Approved");
+
+        System.out.println("StringBuilder: " + sb7);
+        System.out.println("Final String: " + finalStatus);
     }
 }
